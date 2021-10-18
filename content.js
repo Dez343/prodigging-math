@@ -5,8 +5,8 @@ for (var i = 0; i < elements.length; i++) {
         var node = element.childNodes[j];
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            // var council = text.replace(/Sith Lord Party/gi, 'Sith Council');
-            var replacedText = text.replace(/Cat/gi, 'Sith Lord');
+            // var council = text.replace(/Prodigy Math Game/gi, 'Prodigging Math');
+            var replacedText = text.replace(/Play Prodigy/gi, 'Play Prodigging');
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
             }
